@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WashU | SHPE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" >
+        <!--Google font for SHPE title-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400i,900i" rel="stylesheet">
+        <style>
+            @media (max-width: 550px) {
+                .big-container {
+                    display: none;
+                }
+            }
+            @media (min-width: 550px) {
+                .small-container {
+                    display: none;
+                }
+            }
+            /* Responsive iFrame */
+            .responsive-iframe-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 30px;
+                height: 0;
+                overflow: hidden;
+            }
+            .responsive-iframe-container iframe,   
+            .vresponsive-iframe-container object,  
+            .vresponsive-iframe-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header-area overlay" >
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container">
+                    <a href="home.html" class="navbar-brand">WashU <b>SHPE</b></a>
+
+                    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+                        <span class="menu-icon-bar"></span>
+                        <span class="menu-icon-bar"></span>
+                        <span class="menu-icon-bar"></span>
+                    </button>
+
+                    <div id="main-nav" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li><a href="about.html" class="nav-item nav-link">About SHPE</a></li>
+                            <li><a href="support.html" class="nav-item nav-link">Support</a></li>
+                            <li><a href="events.html" class="nav-item nav-link active">Events</a></li>
+                            <li><a href="contact.html" class="nav-item nav-link">Contact</a></li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="img-container">
+
+                <h2 id="events-title">Upcoming Events</h2>
+                <p id="about-desc">Please see our list of events below on the following calendar. If you have any questions on an event, or would like to host an event with WashU SHPE, please don't hesitate to reach out to shpe@wustl.edu!</p>
+
+            </div>
+        </header>
+
+        <main>
+            <div class="responsive-iframe-container big-container">
+                <iframe src="https://calendar.google.com/calendar/embed?height=800&amp;wkst=1&amp;bgcolor=%23999999&amp;src=h7sphvbuv3c7accc19tallajp4%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FChicago" style="border-width:0" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="responsive-iframe-container small-container">
+                <iframe src="https://calendar.google.com/calendar/embed?height=800&amp;mode=AGENDA&amp;wkst=1&amp;bgcolor=%23999999&amp;src=h7sphvbuv3c7accc19tallajp4%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FChicago" style="border-width:0" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </main>
+        <div class="footer">
+            <div style="padding-left:15px; float: left;">
+            <p style="color:black;text-align:left;">WashU SHPE Chapter</p>
+            </div>
+            <div style="text-align:right; padding-right: 15px;">
+                              <p style="float:right; padding-left: 5px;">Follow Us</p> <a href="https://www.facebook.com/wustlshpe/"><img src="if_square-facebook_317727%20(1).png" style="width:24px;height:24px;" />
+                </div>
+
+        </div>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
